@@ -43,6 +43,7 @@
 			</s:form>
 		</div>
 	</div>
+	
 	<div style="margin-bottom: 20px">
 		<s:if test="hasActionMessages()">
 			<div class="msgok">
