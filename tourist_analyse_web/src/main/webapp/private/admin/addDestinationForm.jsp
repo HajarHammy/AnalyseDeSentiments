@@ -45,7 +45,7 @@
 
 		<h2>Ajout d'une destination</h2>
 
-		<s:form action="addDestination" method="post">
+		<s:form action="addFileUpload" method="post">
 
 			<div class="type-text">
 				<s:textfield label="Destination :" name="destination.nomDest" />

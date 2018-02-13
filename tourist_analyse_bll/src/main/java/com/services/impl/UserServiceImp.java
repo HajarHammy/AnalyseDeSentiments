@@ -35,25 +35,18 @@ public class UserServiceImp implements UserService{
 		    userDao.create(user);
 	}
 
-	public Utilisateur GetUser(String email, String password) 
+	public String GetUser(String email, String password) 
 	{
 			for(Utilisateur user:userDao.getAll())
 			{
 				if(user.equals(email, password))
 						{
-					return userDao.findById(user.getId());
+					return  user.getRole().getRoleName();
 						}
 			}
 			return null;
 	}
 	
-	public Utilisateur loadUserByUsername(String pLogin)
-	{
-		Utilisateur lUser = null;
-		lUser = userDao.getUserByLogin(pLogin);
-		userDao.update(lUser);
-		return lUser;
-	}
 	
 
 }

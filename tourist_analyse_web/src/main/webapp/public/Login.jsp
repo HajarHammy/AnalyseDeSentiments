@@ -34,7 +34,7 @@
 			<s:form action="loginAction" method="POST">
 
 				<div class="type-text">
-					<s:textfield label="login" name="userName" />
+					<s:textfield label="login" name="email" />
 				</div>
 				<div class="type-text">
 					<s:textfield label="mot de passe" name="password" />

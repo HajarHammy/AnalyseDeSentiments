@@ -8,7 +8,7 @@ public interface UserService
 		
 	public void addUtilisateur(Utilisateur user);
 	
-	public Utilisateur GetUser(String email,String password);
-	public Utilisateur loadUserByUsername(String pLogin);
+	public String GetUser(String email,String password);
+
 
 }
