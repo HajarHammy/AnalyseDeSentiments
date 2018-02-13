@@ -45,14 +45,12 @@
 
 		<h2>Ajout d'une destination</h2>
 
-		<s:form action="addFileUpload" method="post">
-
+		<s:form action="addFileUpload" method="post" enctype="multipart/form-data">
 			<div class="type-text">
 				<s:textfield label="Destination :" name="destination.nomDest" />
 			</div>
-
-			<sj:submit value="Enregistrer" />
-
+			<s:file name="upload" label="User Image" />
+			<s:submit value="Upload" align="center" />
 		</s:form>
 
 	</div>
